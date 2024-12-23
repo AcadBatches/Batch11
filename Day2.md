@@ -202,7 +202,7 @@ CSS selectors are used to target and style specific elements in HTML. They allow
 
 ---
 
-## 5. Building a Responsive Layout Using Flexbox
+## 5. Designing a Responsive Multi-Column Layout with Flexbox
 
 Flexbox makes it easy to build responsive layouts that adapt to different screen sizes.
 
