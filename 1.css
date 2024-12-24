@@ -1,0 +1,26 @@
+.con3{
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+    color:black;
+    background-color: cornsilk;
+    justify-content: flex-end;
+}
+.con2 {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 5px;
+    color: maroon;
+    background-color: cornsilk;
+    align-items: center;
+}
+.con4 {
+    color :black;
+    background-color: palevioletred;
+ 
+    padding: 0px 10px;
+
+    margin-right: 20px;
+ 
+}
