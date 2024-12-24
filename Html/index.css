@@ -1,0 +1,14 @@
+h1{
+    color: salmon;
+    text-align: center;
+
+}
+h2{
+    color: blue;
+    margin-left: 50px;
+}
+p{   
+    color: green;
+    background-color: yellow;
+    padding: 20px;
+}
