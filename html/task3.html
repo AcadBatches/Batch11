@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            form
+        </title>
+        <style>
+            .ai{
+                background-color: aliceblue;
+                border-radius: 20px;
+                margin-left: 400px;
+                margin-right: 400px;
+                text-align: center;
+                margin-top: 50px;
+                justify-content: center;
+                display: flex;     
+            }
+            .a{
+                justify-content: center;
+                display: flex;     
+            }
+            .b{
+                margin-right: 100px;
+            }
+            .c{
+              margin-right:  20px;
+            }
+           
+        </style>
+    </head>
+    <body style="background-color: aquamarine;">
+        <div class="ai">
+            <form action="1.html" method="get">
+        <h2 style="color: cornflowerblue;">Registationo form</h2>
+
+        <lablel  class="au" for="name"><b>Name </b></lablel>
+        <input placeholder=" enter name" required>
+<br><br>
+        <label type="email"><b>Email</b></label>
+        <input placeholder=" enter email" required>
+<br><br>
+        <label for="password"><b>Password</b></label>
+        <input type="text" placeholder="enter password" required>
+<br><br>
+<div class="c">
+        <label class="c" for="gender"><b>Gender:</b></label>
+        <label class="d" for="male">male</label>
+        <input type="radio" id="male" name="gender" required>
+        <label for="female">female</label>
+        <input type="radio" id="female" name="gender" required>
+    </div>    
+<br><br>
+        <label for="country"><b>Country</b></label>
+        <select class="b" name="country" id="country">
+          <option value="ind">Ind</option> 
+          <option value="can">Can</option> 
+          <option value="usa">Usa</option> 
+          <option value="usa">Pak</option> 
+          <option value="usa">Af</option> 
+          
+        </select>
+<br><br>
+        <label class="a" for="query"><b>Query:</b></label>
+        <textarea cols="30" rows="5"></textarea>
+        
+<br><br>
+        <button  type="submit" style="background-color:cornflowerblue; font-size: 30px;">Submit</button>
+        </form>
+    </div>
+    
+    </body>
+</html>
