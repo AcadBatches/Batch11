@@ -1,20 +1,81 @@
 <html>
     <head><title>forms html </title>
     </head>
-    <body>
-    <form>
+  <style>
+    
+    .ui{
+        background-color: aliceblue;
+        border-radius: 30px;
+        margin-left: 550px;
+        margin-right: 550px;
+        justify-content: center;
+        text-align: center ;
+        ;
 
-<label for="name">name : </label>
-<input type="text" id="name" name="name" placeholder="enter your name"
-<br>
- <label for="email">email : </label
- <input type="text" id="email" name="email" placeholder="enter your email"
- <br>
- <label for ="password">password : </label>
- <input type ="password" id = "password" name="password" place holder="enter your password"
- <br>
- <label for ="gender">gender </label> 
- <input type="radio" id="male " name ="gender" value="male"
-</form>
+    }
+   
+  </style>
+
+   <body style="background-color: blueviolet;">
+
+       <div class="ui">
+     
+        <form style="font-family:Arial, Helvetica, sans-serif;  ;" >
+            <h1 style="margin-top: 60px; color: blueviolet;"><br>Registration form</h1>
+        
+            <label for="name" style="margin-left: ;"> <b>Full name : </b></label>
+            <br>
+
+            <input type="text" id="name" name="name" placeholder="enter your name" required style ="width: 450px;" >
+            <br>
+            <br>
+             <label for="email"><b>Email address :</b> </label>
+             <br>
+             <input type="text" id="email" name="email" placeholder="enter your email" required style="width: 450px;">
+             <br>
+             <br>
+             <label for ="password"><b> Password : </b></label>
+             <br>
+             <input type ="password" id = "password" name="password" placeholder="enter your password" required style="width: 450px">
+             <br>
+             <br>
+             <label for ="gender"><b>Gender : </b></label>
+            
+             <label for ="male">Male</label> 
+             <input type="radio" id="male " name ="gender" >
+             <label for = "female"> Female</label>
+             <input type="radio" id="female" name="gender"></input>
+             <br>
+             <br>
+             <label for ="country"><b>Country : </b></label>
+
+             <select style="width: 400px;" name="country" id="country">
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa" >America</option>
+             </select>
+             <br>
+                <br>
+                
+                <label for ="about you"> <b>about yourself : </b></label>
+                <br>
+                <textarea name="about you" id="" cols="65" rows="5" placeholder="tell about yourself"></textarea>
+                
+                <br>
+                <br>
+             <button type="submit" style="width: 400px; background-color:blueviolet ;">submit </button>
+             <br>
+             <br>
+             <br>
+             <br>
+            </form>
+
+
+
+       </div>
+       
+    
+
+</body>
     </body>
 </html>
