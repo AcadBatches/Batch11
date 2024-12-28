@@ -1,0 +1,9 @@
+git clone url
+git branch --all
+git fetch
+git branch
+git branch name(create)
+git switch 
+git add .
+git commit -m "msg"
+git push
