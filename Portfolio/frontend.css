@@ -80,7 +80,7 @@ footer{
    
 }   
 .m1{
-    padding-left:40px;
+    padding-left:15px;
     font-size: 20px;
     height: 350px;
     width: 500px;
@@ -89,10 +89,11 @@ footer{
    
     flex-direction: column;
     margin: 90px;
-    background-color: rgb(61, 196, 8);
+    background-color: rgb(67, 67, 121);
+    margin-right: 5px;
 }
+
 .m2{
-    padding-left:5px;
     font-size: 20px;
     height: 350px;
     width: 500px;
@@ -100,31 +101,32 @@ footer{
     display: flex;
     flex-direction: column;
     margin: 90px;
-    background-color: rgb(61, 196, 8);
+    padding-left:15px;
+    background-color: rgb(67, 67, 121);
 }
 
 .m3{
-    padding-left:40px;
     font-size: 20px;
     height: 350px;
     width: 500px;
     border-radius: 15px;
     display: flex;
-   
     flex-direction: column;
     margin: 90px;
-    background-color: rgb(61, 196, 8);
+    padding-left:15px;
+    background-color: rgb(67, 67, 121);
 }
 .m4{
-    padding-left:5px;
+    padding-left:15px;
     font-size: 20px;
     height: 350px;
     width: 500px;
     border-radius: 15px;
     display: flex;
+    margin-right: 5px;
     flex-direction: column;
     margin: 90px;
-    background-color: rgb(61, 196, 8);
+    background-color: rgb(67, 67, 121);
 }
 
 .ott{
@@ -132,7 +134,7 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 40px;
-
+    color: #ece8e8;
 }
 .right{
     display: flex;
@@ -159,10 +161,12 @@ h4{
 }
 .t1{
     display: flex;
-    flex-direction: row;
-    gap: 2px;
+    
+    gap: 12px;
+    
 }
 .t2{
     display: flex;
-    gap: 40px;
+
+    gap: 2px;
 }
