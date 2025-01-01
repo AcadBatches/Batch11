@@ -168,10 +168,12 @@ for (key in object) {
 ```
 #### Example:
 ```javascript
-let person = { name: "Alice", age: 25 };
-for (let key in person) {
-    console.log(key + ": " + person[key]);
+let fruits = ["Apple", "Banana", "Cherry"];
+
+for (let index in fruits) {
+    console.log(index + ": " + fruits[index]);
 }
+
 ```
 
 ### **5. `for...of` Loop**
