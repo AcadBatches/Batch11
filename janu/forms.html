@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+            body{
+                background-color: lightblue;
+            }
+                .ui{
+                   text-align: center; 
+                    left :50%;
+                    top: 50%;
+                    justify-content: center;
+                    border: 1px solid black;
+                    margin-top: 200px;
+                    margin-left: 500px;
+                    margin-right: 500px;
+                    margin-bottom: 300px; 
+                    background: white;
+
+
+                }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="ui">
+        <h1>Registration Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="m">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for ="f">Female</label><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        </div>
+
+    </body>
+</html>
