@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic Calculator</title>
+        <style>
+            body{
+                background-color: black;
+                justify-content: center;
+                text-align: center;
+            }
+            h1{
+                color: lightblue;
+                font-size: 50px;
+                
+            }
+            button{
+                background-color: black;
+                color: white;
+                font-size: 20px;
+            }
+            input{
+                background-color: black;
+                color: white;
+                font-size: 20px;
+            }
+        </style>
+        
+        
+        
+    </head>
+    <body>
+        <h1>Basic Calculator</h1>
+        <form >
+            <input type="number" id="num1" placeholder="first number"><br><br>
+            <input type="number" id="num2" placeholder="second number"><br><br>
+            <button type="button" onclick="add()">+ Add</button>
+            <button type="button" onclick="sub()">- Sub</button>
+            <button type="button" onclick="mul()">* mul</button>
+            <button type="button" onclick="div()">/ div</button>
+            <h1 id="result"></h1>
+        </form>
+        
+       <script>
+        function add(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`Result: ${a+b}`
+            
+        }   
+        function sub(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`Result: ${a-b}`
+        }
+        function mul(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`Result: ${a*b}`
+        } 
+        function div(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`Result: ${a/b}`
+        }  
+
+
+       </script>
+    </body>
+</html>
