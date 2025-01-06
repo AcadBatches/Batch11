@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <input type="number" id="num1" placeholder="first number">
+    <input type="number" id="num2" placeholder="second number">
+    <button onclick="Add()">+</button>
+    <button onclick="Sub()">-</button>
+    <button onclick="Mul()">*</button>
+    <button onclick="Div()">/</button>
+    <h2 id="result"></h2>
+    <script>
+        function Add(){
+            const a=+document.getElementById('num1').value; 
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`result:${a+b}`;
+        }
+        function Sub(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`result:${a-b}`;
+        }
+        function Mul(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`result:${a*b}`;
+        }
+        function Div(){
+            const a=+document.getElementById('num1').value;
+            const b=+document.getElementById('num2').value;
+            document.getElementById('result').innerHTML=`result:${a/b}`;
+        }
+    </script>
+
+</body>
+</html>
