@@ -94,27 +94,32 @@ footer{
 }
 
 .m2{
+
+    padding-left:15px;
     font-size: 20px;
     height: 350px;
     width: 500px;
     border-radius: 15px;
     display: flex;
+   
     flex-direction: column;
     margin: 90px;
-    padding-left:15px;
     background-color: rgb(67, 67, 121);
+    margin-right: 5px;
 }
 
 .m3{
+    padding-left:15px;
     font-size: 20px;
     height: 350px;
     width: 500px;
     border-radius: 15px;
     display: flex;
+   
     flex-direction: column;
     margin: 90px;
-    padding-left:15px;
     background-color: rgb(67, 67, 121);
+    margin-right: 5px;
 }
 .m4{
     padding-left:15px;
@@ -123,10 +128,11 @@ footer{
     width: 500px;
     border-radius: 15px;
     display: flex;
-    margin-right: 5px;
+   
     flex-direction: column;
     margin: 90px;
     background-color: rgb(67, 67, 121);
+    margin-right: 5px;
 }
 
 .ott{
