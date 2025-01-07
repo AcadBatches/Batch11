@@ -32,38 +32,60 @@
     </head>
     <body>
         <h1>Basic Calculator</h1>
-        <form >
-            <input type="number" id="num1" placeholder="first number"><br><br>
-            <input type="number" id="num2" placeholder="second number"><br><br>
-            <button type="button" onclick="add()">+ Add</button>
-            <button type="button" onclick="sub()">- Sub</button>
-            <button type="button" onclick="mul()">* mul</button>
-            <button type="button" onclick="div()">/ div</button>
-            <h1 id="result"></h1>
-        </form>
+        <input type="number" id="num1" placeholder="first number"><br><br>
+        <input type="number" id="num2" placeholder="second number"><br><br>
+        <button type="button" onclick="calculate('+')">Add</button>
+        <button type="button" onclick="calculate('-')"> Sub</button>
+        <button type="button" onclick="calculate('*')"> mul</button>
+        <button type="button" onclick="calculate('/')"> div</button><br> <br>
+        <button type="button" onclick="calculate('^')"> power</button>
+        <button type="button" onclick="calculate('%')"> mod</button>
+        <button type="button" onclick="calculate('xx')"> sqrt</button>
+        <h1 id="result"></h1>
+    
         
        <script>
-        function add(){
-            const a=+document.getElementById('num1').value;
-            const b=+document.getElementById('num2').value;
-            document.getElementById('result').innerHTML=`Result: ${a+b}`
+        function calculate(operator){
+            const num1=parseFloat(document.getElementById('num1').value);
+            const num2=parseFloat(document.getElementById('num2').value);
             
-        }   
-        function sub(){
-            const a=+document.getElementById('num1').value;
-            const b=+document.getElementById('num2').value;
-            document.getElementById('result').innerHTML=`Result: ${a-b}`
+            if (isNaN(num1) || isNaN(num2)){
+            document.getElementById('result').innerText="Error: please enter valid number";
+            return;
+            }
+        
+        let result;
+        if(operator==='+'){
+            result=num1+num2;
         }
-        function mul(){
-            const a=+document.getElementById('num1').value;
-            const b=+document.getElementById('num2').value;
-            document.getElementById('result').innerHTML=`Result: ${a*b}`
-        } 
-        function div(){
-            const a=+document.getElementById('num1').value;
-            const b=+document.getElementById('num2').value;
-            document.getElementById('result').innerHTML=`Result: ${a/b}`
-        }  
+        else if(operator==='-'){
+            result=num1-num2;
+        }
+            
+        else if(operator==='*'){
+            result=num1*num2;
+        }
+        else if(operator==='/'){
+            result=num1/num2;
+        }
+        else if(operator==='**'){
+            result=num1**num2;
+        }
+        else if(operator==='%'){
+            result=num1%num2;
+        }
+        else if(operator==='xx'){
+            result=Math.sqrt(num1);
+        }
+        
+        else{
+            result="Invalid operator";
+            document.getElementById('result').innerText="Error: please enter valid operator";
+        }
+        document.getElementById('result').innerText=`result :${result}`;
+    
+    }   
+        
 
 
        </script>
