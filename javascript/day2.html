@@ -1,0 +1,82 @@
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head><title>calc</title></head>
+    <style>
+#d{
+    text-align: center;
+    background-color: aliceblue;
+    margin-right: 600px;
+    margin-left: 600px;
+    margin-top: 60px;
+    border-radius: 40px;
+}
+
+    </style>
+  
+            
+                <body style="background-color: blueviolet;">
+                    <section class="box"></section>
+                    <form id="cal">
+                      
+                      
+                    <div id="d">
+                        <h1 style="color: blueviolet; background-color: rgb(39, 39, 39);border-radius: 100px;">CALCULATOR</h1>
+                        <div id="ph">
+                        <input type="number" id="num1" placeholder="first number">
+                        <br>
+                        <br>
+                        <input type="number" id="num2" placeholder="secondnumber">
+                        </div>
+                        <br>
+                        <br>
+                        <button type="button" onclick="sum('+')">+ </button>
+                        
+                        
+                        <button type="button"  onclick="sum('-')">-</button>
+                        
+            
+                        <button type="button" onclick="sum('*')">*</button>
+                        
+                        <button type="button" onclick="sum('/')">/</button>
+                        <button type="button" onclick="sum('%')">%</button>
+                        <button type="button" onclick="sum('^')">^</button>
+                        <button type="button" onclick="sum('**')">**</button>
+                        <br><br>
+                        <h2 id="result">result:</h2>
+                        
+                    </div>
+                    </form>
+                    <script>
+                     function sum(operator) {
+                        const num1= parseFloat(document.getElementById('num1').value);
+                        const num2= parseFloat(document.getElementById('num2').value);
+
+                        if(isNaN(num1)  || isNaN (num2) ) {
+                            document.getElementById('result').innerText="error";
+                            return;
+                        }
+                        let result;
+                        switch (operator){
+                            case "+":result=num1+num2;
+                            break;
+                            case "-":result=num1-num2;
+                            break;
+                            case "*":result=num1*num2;
+                            break;
+                            case "/":result=num2/num1;
+                            break;
+                            case "%":result=num1%num2;
+                            break;
+                            case "**":result=num1**num2;
+                            break;
+                            case"^": result= num1^num2;
+                            break;
+                            default:
+                           result="invalid!";
+                        }
+                        document.getElementById("result").innerText= `result: ${result}`;
+                    }
+                    </script>
+                    </body>
+</html>
