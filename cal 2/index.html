@@ -1,0 +1,102 @@
+<html>
+<title>calulator</title>
+<style>
+ 
+ #cal {
+
+color: rgb(8, 1, 28);
+text-align: center;
+position: sticky;
+
+
+ }
+ #d {
+    background-color:dodgerblue;
+    position: sticky;
+    
+ }
+ #onecontainer {
+    background-color :rgb(9, 236, 89);
+    
+    margin-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 50px;
+    position: sticky;
+
+   
+ }
+</style>
+
+<body id="d">
+    <div id="onecontainer">
+<div>
+<h1 style="color: rgb(1, 15, 1); text-align: center;padding: 40px;">Caluclator program</h1>
+<form id="cal">
+    <input type="number" id="num1" placeholder="Enter number 1"><br><br>
+    <input type="number" id="num2" placeholder="Enter number 2"><br><br>
+    <button type="button" onclick="calucalte(`+`)" >add</button><br><br>
+    <button type="button" onclick="calucalte(`-`)" >sub</button><br><br>
+    <button type="button" onclick="calucalte(`*`)" >mul</button><br><br>
+    <button type="button" onclick="calucalte(`/`)" >div</button><br><br>
+    <button type="button" onclick="calucalte(`^`)" >exp</button><br><br>
+    <button type="button" onclick="calucalte(`%`)" >module</button><br><br>
+    <button type="button" onclick="calucalte(`sqrt`)" >square root</button><br><br>
+
+    <h2 id="result">result</h2><br><br>
+</div>
+</div>
+
+    </form>
+<script>
+ function calucalte(operator)
+{
+
+const num1= parseFloat(document.getElementById("num1").value) ;
+const num2= parseFloat(document.getElementById("num2").value) ;
+if (isNaN(num1) || isNaN(num2)) {
+    document.getElementById('result').innerText="error :please enter valid number!";
+    return;
+}
+
+let result;
+switch (operator) {
+       case '+':
+        result= num1+num2;
+        break;
+        case '-' :
+        result = num1-num2;
+        break;
+        case  '*' :
+        result = num1*num2;
+        break;
+        case '/':
+        result = num1/num2;
+        break ;
+        case '^':
+        result= num1^num2;
+        break;
+        case '%':
+        result= num1%num2;
+        break;
+        case 'sqrt':
+        result= num1**num2;
+        break;
+        default :
+        result = "invalid operator";
+        }
+
+document.getElementById("result").innerText=`result: ${result}`;
+
+
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
