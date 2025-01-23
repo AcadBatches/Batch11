@@ -1,45 +1,40 @@
-### `src/redux/movieSlice.js`
+### `src/redux/movieSlice.js (Typing Simulator)`
 
 
 ```js
 import { createSlice } from '@reduxjs/toolkit';
-//[pause]
+
 const initialState = {
   placeholder: 'Redux is working!',
 };
-//[pause]
+
 const movieSlice = createSlice({
-  //[pause]
   name: 'movies',
   initialState,
   reducers: {
     // Add actions here in the future
   },
-
 });
-//[pause]
+
 export default movieSlice.reducer;
 ```
 
-### `src/redux/store.js`
+### `src/redux/store.js (Typing Simulator) `
 
 ```js
 import { configureStore } from '@reduxjs/toolkit';
-//[pause]
 import movieReducer from './movieSlice';
-//[pause]
+
 export const store = configureStore({
-//[pause]
   reducer: {
     movies: movieReducer,
   },
-//[pause]
 });
-//[pause]
+
 export default store;
 ```
 
-### `src/App.js (Updated)`
+### `src/App.js (Manual Code)`
 
 ```js
 import { Provider } from 'react-redux';
