@@ -3,19 +3,21 @@
 
 ```js
 import { createSlice } from '@reduxjs/toolkit';
-
+//[pause]
 const initialState = {
   placeholder: 'Redux is working!',
 };
-
+//[pause]
 const movieSlice = createSlice({
+  //[pause]
   name: 'movies',
   initialState,
   reducers: {
     // Add actions here in the future
   },
-});
 
+});
+//[pause]
 export default movieSlice.reducer;
 ```
 
@@ -23,14 +25,17 @@ export default movieSlice.reducer;
 
 ```js
 import { configureStore } from '@reduxjs/toolkit';
+//[pause]
 import movieReducer from './movieSlice';
-
+//[pause]
 export const store = configureStore({
+//[pause]
   reducer: {
     movies: movieReducer,
   },
+//[pause]
 });
-
+//[pause]
 export default store;
 ```
 
